@@ -10,8 +10,8 @@ services:
             - drupal-profiles:/var/www/html/profiles 
             - drupal-sites:/var/www/html/sites 
             - drupal-themes:/var/www/html/themes 
-    postgress:
-        image: postgress
+    postgres:
+        image: postgres
         environment: 
             - POSTGRES_PASSWORD=mypass 
 
@@ -20,6 +20,6 @@ volumes:
     drupal-profiles:
     drupal-sites:
     drupal-themes:
-            
+
     
 
